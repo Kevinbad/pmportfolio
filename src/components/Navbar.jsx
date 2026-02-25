@@ -50,7 +50,7 @@ export default function Navbar() {
                 {/* Desktop Buttons */}
                 <div className="hidden md:flex items-center justify-end gap-4">
                     <a
-                        href="/Kevin Barros - CV (PM).pdf"
+                        href="/Kevin_Barros_CV.pdf"
                         download
                         className="text-sm font-medium text-zinc-300 hover:text-primary-400 transition-colors"
                     >

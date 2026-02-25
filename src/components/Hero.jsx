@@ -55,7 +55,7 @@ export default function Hero() {
                                 <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
                             </a>
                             <a
-                                href="/Kevin Barros - CV (PM).pdf"
+                                href="/Kevin_Barros_CV.pdf"
                                 download
                                 className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-primary-600/20 border border-primary-500/50 text-primary-400 rounded-full font-medium hover:bg-primary-600/30 hover:text-primary-300 transition-all group"
                             >
