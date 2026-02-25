@@ -29,13 +29,13 @@ export default function Navbar() {
                 : 'bg-transparent py-6'
                 }`}
         >
-            <div className="max-w-7xl mx-auto px-6 md:px-12 flex justify-between items-center">
-                <a href="#" className="text-xl font-outfit font-bold tracking-tight text-zinc-50">
+            <div className="max-w-7xl mx-auto px-6 md:px-12 grid grid-cols-2 md:grid-cols-3 items-center">
+                <a href="#" className="text-xl font-outfit font-bold tracking-tight text-zinc-50 justify-self-start">
                     Kevin <span className="text-primary-400">Barros</span>
                 </a>
 
                 {/* Desktop Nav */}
-                <nav className="hidden md:flex items-center gap-8">
+                <nav className="hidden md:flex items-center justify-center gap-8 w-full">
                     {navLinks.map((link) => (
                         <a
                             key={link.name}
@@ -45,22 +45,24 @@ export default function Navbar() {
                             {link.name}
                         </a>
                     ))}
-                    <div className="flex items-center gap-4 border-l border-zinc-800 pl-8 ml-2">
-                        <a
-                            href="/Kevin Barros - CV (PM).pdf"
-                            download
-                            className="text-sm font-medium text-zinc-300 hover:text-primary-400 transition-colors"
-                        >
-                            Resume
-                        </a>
-                        <a
-                            href="#contact"
-                            className="px-5 py-2.5 text-sm font-medium bg-zinc-50 text-zinc-950 hover:bg-zinc-200 transition-colors rounded-full"
-                        >
-                            Let's Talk
-                        </a>
-                    </div>
                 </nav>
+
+                {/* Desktop Buttons */}
+                <div className="hidden md:flex items-center justify-end gap-4">
+                    <a
+                        href="/Kevin Barros - CV (PM).pdf"
+                        download
+                        className="text-sm font-medium text-zinc-300 hover:text-primary-400 transition-colors"
+                    >
+                        Resume
+                    </a>
+                    <a
+                        href="#contact"
+                        className="px-5 py-2.5 text-sm font-medium bg-zinc-50 text-zinc-950 hover:bg-zinc-200 transition-colors rounded-full"
+                    >
+                        Let's Talk
+                    </a>
+                </div>
 
                 {/* Mobile Toggle */}
                 <button
